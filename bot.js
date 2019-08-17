@@ -3,6 +3,8 @@ const client = new Discord.Client();
 
 const PREFIX = '!';
 
+var randomNumber = Math.floor(Math.random() * 101);
+
 client.on('ready', () =>{
     console.log('This bot is online!');
 })
@@ -48,7 +50,10 @@ client.on('message', message=>{
             break;
         case 'forum':
             message.channel.sendMessage('http://www.dk101.com/Discuz/forumdisplay.php?fid=467')
-            break;                      
+            break;
+        case 'lucky':
+            message.channel.sendMessage('你的幸運號碼是: ' + randomnumber)
+            break;  
     }
 })
 
