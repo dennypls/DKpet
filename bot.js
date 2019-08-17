@@ -17,7 +17,7 @@ client.on('message', message=>{
             message.channel.send({embed: {
                 color: 3447003,
                 fields: [
-                  { name: "開啟 -- 指令", value: "銀行 -- !bank\n冒險大陸 -- !map\n合成 -- !compose\n赤兔 -- !horse\n聖獸 -- !pet\n我的寵物 -- !mypet\n挖掘寶物 -- !dig\n第二職業 -- !job\n論壇 -- !forum", inline: true},
+                  { name: "開啟 -- 指令", value: "銀行 -- !bank\n冒險大陸 -- !map\n合成 -- !compose\n赤兔 -- !horse\n聖獸 -- !pet\n我的寵物 -- !mypet\n挖掘寶物 -- !dig\n第二職業 -- !job\n論壇 -- !forum\n彩票 -- !lottery", inline: true},
                 ]
               }
             });
@@ -49,8 +49,8 @@ client.on('message', message=>{
         case 'forum':
             message.channel.sendMessage('http://www.dk101.com/Discuz/forumdisplay.php?fid=467')
             break;
-        case 'lucky':
-            message.channel.sendMessage('你的幸運號碼是: ')
+        case 'lottery':
+            message.channel.sendMessage('http://www.dk101.com/Discuz/pet.php?index=petcp')
             break;  
     }
 })
